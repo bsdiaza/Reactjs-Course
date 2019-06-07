@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Location = () => (
+const Location = ({city}) => (
   <div>
-    <h1>Bogota</h1>
+    <h1>{city}</h1>
   </div>
 )
 export default Location;
