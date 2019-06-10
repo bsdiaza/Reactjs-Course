@@ -13,6 +13,7 @@ const WeatherData = ({ data: { temperature, weatherState, humidity, wind } }) =>
     <WeatherExtraInfo humidity={humidity} wind={wind}/>
   </div>
 );
+
 WeatherData.propTypes = {
   data: PropTypes.shape({
     temperature: PropTypes.number.isRequired,
@@ -21,4 +22,5 @@ WeatherData.propTypes = {
     wind: PropTypes.string.isRequired
   })
 }
+
 export default WeatherData;
